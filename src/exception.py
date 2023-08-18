@@ -6,6 +6,7 @@ sys -   provides various functions and variables that are used to manipulate dif
 import sys
 import logging
 import os
+from src.logger import logging #Instead of below code, we can import logging from logger
 
 #Without this exception was being raised but log file was not being created
 # logs_directory = "logs"
