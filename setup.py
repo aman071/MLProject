@@ -11,7 +11,7 @@ def get_requirements(file_path:str) -> List[str]:
     This function returns list of requirements
     '''
     requirements=[]
-    with open(file_path) as file_obj:
+    with open(file_path) as file_obj:   #reading requirements.txt
         requirements=file_obj.readlines()   #reads \n also
         requirements=[req.replace("\n", "") for req in requirements]
         if HYPHEN_E_DOT in requirements:
