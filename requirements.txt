@@ -1,0 +1,5 @@
+pandas
+numpy
+seaborn
+# -e .
+#-e . automatically triggers building of package when pip install runs.
