@@ -5,6 +5,16 @@ sys -   provides various functions and variables that are used to manipulate dif
 
 import sys
 import logging
+import os
+
+#Without this exception was being raised but log file was not being created
+# logs_directory = "logs"
+# os.makedirs(logs_directory, exist_ok=True)
+# logging.basicConfig(
+#     filename=os.path.join(logs_directory, "error.log"),  # Specify the name of the log file
+#     format="[%(asctime)s] %(levelname)s - %(message)s",  # Define the log message format
+#     level=logging.INFO  # Set the logging level to INFO or higher
+# )
 
 # error_detail would come sys
 def error_message_detail(error, error_detail:sys):
