@@ -61,4 +61,4 @@ if __name__=="__main__":
     #maps to 127.0.0.1 which is our own IP.
     #While deploying remove debug=True
     # app.run(host='0.0.0.0', debug=True)
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8080)
