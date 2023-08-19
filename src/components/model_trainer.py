@@ -34,6 +34,8 @@ class ModelTrainer:
             )
 
             '''
+            After getting training and testing data we define the object for the model we want and fit the data.
+            Here, we can see we are defining multiple model objects
             We train multiple models to see which one performs best. This is ok for smaller datasets. But for massive datasets
             we need more planning. Perhaps we can decide which model to use, or we can also take subsets of data and run different
             models on those subsets
@@ -49,6 +51,7 @@ class ModelTrainer:
                 'AdaBoost Regressor':AdaBoostRegressor()
             }
 
+            #defining hyperparameters for the above models
             params={
                 'Random Forest':    {
                                         'n_estimators':[8,16,32,64,128,256]
@@ -90,6 +93,7 @@ class ModelTrainer:
                                     },
             }
 
+            #utils.py evaluate_models runs the models and gives us a report on each model
             model_report:dict=evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test, 
                                              models=models, params=params)
             
@@ -102,6 +106,7 @@ class ModelTrainer:
             
             logging.info('Best model found')
 
+            #save the best object obj as pickle dump
             save_object(
                 file_path=self.model_trainer_config.trained_model_file_path,
                 obj=best_model
