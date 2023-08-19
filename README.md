@@ -8,3 +8,5 @@
 Similar configuration of application.py is needed for Azure. Azure follows CD
 #------------------------------------------
 Deployment using EC2 + Docker with the help of Github Actions was also done. Github Actions supports CI/CD through a .yaml file.
+#------------------------------------------
+Procfile is needed by Heroku to specify entry point into our app.
