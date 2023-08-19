@@ -95,7 +95,7 @@ class DataTransformation:
 
             #apply the preprocessor pipeline on the data
             input_feature_train_arr=preprocessing_obj.fit_transform(input_features_train_df)
-            input_feature_test_arr=preprocessing_obj.fit_transform(input_features_test_df)
+            input_feature_test_arr=preprocessing_obj.transform(input_features_test_df)
 
             #concatenate
             train_arr=np.c_[

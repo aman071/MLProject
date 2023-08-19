@@ -10,6 +10,10 @@ from src.logger import logging
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
 
+from src.components.model_trainer import ModelTrainer
+from src.components.model_trainer import ModelTrainerConfig
+
+
 '''
 @dataclass:     This is like a special tag that helps create a special kind of class 
                 called a "data class." It makes it easier to define a class for holding data.
@@ -93,4 +97,9 @@ if __name__=="__main__":
 
     #combining data ingestion and data transformation just for testing
     data_transformation=DataTransformation()
-    data_transformation.initiate_data_transformation(train_data, test_data)
+    train_arr, test_arr, _ = data_transformation.initiate_data_transformation(train_data, test_data) # dont need the third obj since we are already making a pkl file for it
+
+    model_trainer=ModelTrainer()
+    print(model_trainer.initiate_model_trainer(train_arr, test_arr))
+
+     
