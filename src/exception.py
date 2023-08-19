@@ -4,7 +4,6 @@ sys -   provides various functions and variables that are used to manipulate dif
 '''
 
 import sys
-import logging
 import os
 from src.logger import logging #Instead of below code, we can import logging from logger
 

@@ -8,7 +8,7 @@ HYPHEN_E_DOT='-e .'
 
 def get_requirements(file_path:str) -> List[str]:
     '''
-    This function returns list of requirements
+    This function returns list of requirements from requirements.txt
     '''
     requirements=[]
     with open(file_path) as file_obj:   #reading requirements.txt
