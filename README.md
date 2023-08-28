@@ -1,4 +1,4 @@
-# ML Project
+# StudentPerformance
 NOTE: EC2 deployment steps are shown below
 # ------------------------------------------
 - .ebextensions is config for deploying on AWS Elastic BeanStalk. It is a PaaS.
