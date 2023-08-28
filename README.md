@@ -17,7 +17,7 @@ Procfile is needed by Heroku to specify entry point into our app.
 
 Dockerfile is created. Used to create a Docker Image.
 
-A main.yaml file defines the workflow that we are going to follow in the process of our deployment. This file is defined in .github/workflows , as per the requirement of Github Actions, through which we are going to do CI/CD deployment. This main.yaml file was obtained as a template from Github Actions itself. It defined the name of the deployment, files to ignore during deployment push, and the jobs to run.
+A main.yaml file defines the workflow that we are going to follow in the process of our deployment. This file is defined in .github/workflows , as per the requirement of Github Actions, through which we are going to do CI/CD. This main.yaml file was obtained as a template from Github Actions itself. It defineS the name of the deployment, files to ignore during deployment push, jobs to run, etc.
 
 **Integration** is the CI step. Checks out code, checks linting, can run unit tests integration.
 
