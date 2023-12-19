@@ -13,7 +13,7 @@ Procfile is needed by Heroku to specify entry point into our app.
 
 # Deployment steps using EC2
 
-![](images/1.PNG)
+![](./images/1.PNG)
 
 Dockerfile is created. Used to create a Docker Image.
 
